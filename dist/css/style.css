@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.thin-border{
+	background: black;
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	color: #A61B1D;
+}
+
+.center-nav{
+	align-content: center;
+	text-align: center;
+}
+
+.valign-label{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.valign-card{
+	position: absolute;
+     left: 50%;
+     top: 50%;
+     -moz-transform: translate(-50%, -50%)
+     -webkit-transform: translate(-50%, -50%)
+     -ms-transform: translate(-50%, -50%)
+     -o-transform: translate(-50%, -50%)
+     transform: translate(-50%, -50%);
+}

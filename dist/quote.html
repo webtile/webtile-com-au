@@ -1,0 +1,254 @@
+<head>
+<!-- Web Firebase Database 
+    <script src="/__/firebase/4.0.0/firebase-app.js"></script>
+    <script src="/__/firebase/4.0.0/firebase-auth.js"></script>
+    <script src="/__/firebase/4.0.0/firebase-database.js"></script>
+    <script src="/__/firebase/4.0.0/firebase-messaging.js"></script>
+
+     Leave out Storage 
+     <script src="/__/firebase/4.0.0/firebase-storage.js"></script> 
+
+    <script src="/__/firebase/init.js"></script>
+-->
+<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+
+
+<link href="css/materialize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/quote.controller.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<title>WD | Quote</title>
+</head>
+<body>
+<div class="grey lighten-2">
+  <div class="row">
+    <div class="blue-grey lighten-3 z-depth-2">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h1 class="thin center">Quotation</h1>
+          </div>
+        </div>
+      </div>
+      <nav class="cyan darken-1 blue-text">
+        <div class="row nav-center">
+          <div class="col s12 m10 l6 offset-m1 offset-l3">
+            <ul>
+              <div class="nav-wrapper ">
+                <div class="center-nav">
+                  <ul class="thin ">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="quote.html">Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </div>
+  </div>
+  <div class="row ">
+    <div class="col s12 m10 l8 offset-m1 offset-l2 white lighten-2 z-depth-1">
+      <div class = "col s12 m10 offset-m1">
+        <div class="row">
+          <h2 class="thin">Our Services</h2>
+          <div class="divider cyan "></div>
+        </div>
+        <p class="flow-text">Does your site require:</p>
+        <div class="row">
+          <form action="#">
+            <div class="col s12">
+              <p>
+                <input type="checkbox" class="filled-in" id="select_navbar" />
+                <label for="select_navbar">A Navigation Bar / Website Navigation</label>
+              </p>
+            </div>
+          </form>
+          <form action="#">
+            <div class="col s12">
+              <p>
+                <input type="checkbox" class="filled-in" id="select_ecommerce" />
+                <label for="select_ecommerce">eCommerce or checkout / purchase services</label>
+              </p>
+            </div>
+          </form>
+          <form action="#">
+            <div class="col s12">
+              <p>
+                <input type="checkbox" class="filled-in" id="select_logins" />
+                <label for="select_logins">Employee or Member logins</label>
+              </p>
+            </div>
+          </form>
+          <form action="#">
+            <div class="col s12">
+              <p>
+                <input type="checkbox" class="filled-in" id="select_feedback"  />
+                <label for="select_feedback">Comments / public feedback</label>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+        	<p class="flow-text">Select some site pages:</p>
+        </div>
+        <div class="row">
+         <div class="col s6">
+         <div class="row  ">
+				<input type="checkbox" class="filled-in" id="page_home"  />
+               
+                <label for="page_home">Home</label>
+			</div>   
+               <div class="row ">
+				<input type="checkbox" class="filled-in" id="page_contact"  />
+                <label for="page_contact">Contact</label>
+			</div>   
+               <div class="row">
+				<input type="checkbox" class="filled-in" id="page_store"  />
+                <label for="page_store">Store</label>
+			</div>   
+         </div>
+		  <div class="col s6">
+			         <div class="row">
+				<input type="checkbox" class="filled-in" id="page_menu"  />
+                <label for="page_menu">Menu</label>
+			</div>          <div class="row">
+				<input type="checkbox" class="filled-in " id="page_gallery"  />
+                <label for="page_gallery"> Gallery</label>
+			</div>          <div class="row">
+				<input type="checkbox" class="filled-in valign-label" id="page_blog"  />
+                <label class="valign-label" for="page_blog">Blog</label>
+			</div>   
+			</div>
+
+ <!--<div class="input-field col s12 m10 l9">
+  <i class="material-icons prefix">comment</i>
+  <select multiple id="site_pages">
+              <option value="" disabled selected>Select some pages your site will contain</option>
+              <option value="1">Home</option>
+              <option value="2">Contact / About Us</option>
+              <option value="3">Store</option>
+              <option value="4">Menu (no purchases)</option>
+              <option value="5">Gallery</option>
+              <option value="6">Blog</option>
+            </select>
+            <label for="site_pages">Your site's pages</label>
+        </div> -->
+	  	</div>
+
+          <div class="row">
+		  <form class="col s12 m10 l9">
+			<div class="input-field"><i class="material-icons prefix">comment</i>
+			  <textarea id="description" class="materialize-textarea validate" required ></textarea>
+			  <label for="description" >Website Description</label>
+		    </div>
+		  </form>
+          </div>
+        <div class="row">
+          <h2 class="thin">Contact Details</h2>
+          <div class="divider cyan "></div>
+        </div>
+        <div class="col s12 m10 l9">
+          <div class="row">
+            <div class="input-field col s6"> <i class="material-icons prefix">account_circle</i>
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name" data-error="Please enter your name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate" required="true">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12"><i class="material-icons prefix">phone</i>
+              <input id="phone_number" type="tel" class="validate" required="true">
+              <label for="phone_number" data-error="Please enter a valid phone number">Phone Number</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12"><i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" required="true">
+              <label for="email" data-error="Please enter a valid email address">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12"><i class="material-icons prefix">store</i>
+              <input id="business_name" type="text" class="validate">
+              <label for="business_name">Business Name</label>
+            </div>
+            <div class="input-field col s11 offset-s1">
+              <input id="address_line1" type="text" class="validate">
+              <label for="address_line1">Address Line 1</label>
+            </div>
+            <div class="row">
+              <div class="input-field col s11 offset-s1">
+                <input id="address_line2" type="text" class="validate">
+                <label for="address_line2">Address Line 2</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s7 offset-s1">
+                <input id="address_city" type="text" class="validate">
+                <label for="address_city">City</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="address_post_code" type="text" class="validate">
+                <label for="address_post_code">Post Code</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s11 offset-s1">
+                <input id="address_state" type="text" class="validate">
+                <label for="address_state">State</label>
+              </div>
+            </div>
+          </div>
+		 <div class="row">
+            <div class="col">
+              <button id="submit_button" class="btn waves-effect waves-light" type="submit" name="action" onclick="submitClicked()">Submit <i class="material-icons right">send</i> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="page-footer blue-grey darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">miniBit Web Designs</h5>
+                <p class="grey-text text-lighten-4">Clean, compatible web designs.</p>
+              </div>
+<!--
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+-->
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright miniBit
+<!--            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+            </div>
+          </div>
+        </footer>
+</div>
+</body>
