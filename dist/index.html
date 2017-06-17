@@ -1,65 +1,162 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.1.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.1.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.1.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.1.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.1.2/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<head>
+<link href="css/materialize.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/index.controller.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<title>WD | Home</title>
+</head>
+<body>
+<div class="grey lighten-2">
+  <div class="blue-grey lighten-3 z-depth-2">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h1 class="thin center"> Webtile</h1>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
-</html>
+    <nav class="cyan darken-1 blue-text">
+      <div class="row nav-center">
+        <div class="col s12 m10 l6 offset-m1 offset-l3">
+          <ul>
+            <div class="nav-wrapper ">
+              <div class="center-nav">
+                <ul class="thin ">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="quote.html">Quote</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="section">
+    <div class="row">
+    <div class="col s12 m12 l8  offset-l2 white lighten-2 z-depth-1">
+        <div class = "col s12 m10 offset-m1">
+          <div class = "row">
+            <h1>Welcome,</h1>
+            <div class="row">
+              <p class="flow-text">A company's website is the face of the company. Too many small-businesses avoid professional websites due to over-priced quotations. Here at Webtile, we provide professional websites at an affordable cost. We guarantee customer satisfaction or your money back. Our goal is producing high-quality websites while leaving the client in control. We help coach the client in the technical aspects to help find the perfect website for you.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row">
+              <h2 class="thin">Professional Websites</h2>
+              <div class="divider cyan "></div>
+              <div class="section ">
+                <div class="row valign-wrapper">
+                  <div class="col s2 "> <i class="large material-icons cyan-text text-darken-2 ">stay_current_landscape </i> </div>
+                  <div class="col s9 offset-s1 m7">
+                    <p class="flow-text">Our websites support cross-compatibility and work on a variety of different devices and browsers.</p>
+                  </div>
+                </div>
+                <div class="row valign-wrapper">
+                  <div class="col s2 "> <i class="large material-icons cyan-text text-darken-2">insert_chart</i> </div>
+                  <div class="col s9 offset-s1 m7">
+                    <p class="flow-text">We supply clients with analytics and results needed for your business.</p>
+                  </div>
+                </div>
+                <div class="row valign-wrapper">
+                  <div class="col s2 "> <i class="large material-icons cyan-text text-darken-2">view_carousel</i> </div>
+                  <div class="col s9 offset-s1 m7">
+                    <p class="flow-text">We have a variety of projects and, therefore, experience. For a look at past projects please see below.</p>
+                  </div>
+                </div>
+              </div>
+              <h2 class="thin">Our Projects</h2>
+              <div class="divider cyan "></div>
+              <div class="section">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="material-placeholder"> <img class="materialboxed responsive-img z-depth-1 initialised" data-caption="Benny's Photography" src="images/website_benny.JPG"> </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="material-placeholder"> <img class="materialboxed responsive-img z-depth-1 initialised" data-caption="Paper plot" src="images/website_paper.JPG"> </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="material-placeholder"> <img class="materialboxed responsive-img z-depth-1 initialised" data-caption="web 1" src="images/website.JPG"> </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="material-placeholder"> <img class="materialboxed responsive-img z-depth-1 initialised" data-caption="web 1" src="images/website.JPG"> </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="material-placeholder"> <img class="materialboxed responsive-img z-depth-1 initialised" data-caption="web 1" src="images/website.JPG"> </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="material-placeholder"> <img class="materialboxed responsive-img z-depth-1 initialised" data-caption="web 1" src="images/website.JPG"> </div>
+                  </div>
+                </div>
+              </div>
+              <!--
+            <div class="card">
+              <div class="card-image  blue lighten-4" > <img src="images/website.JPG"> <span class="card-title black-text">Website 1</span> </div>
+              <div class="card-action cyan lighten-2"> <a href="#" class="white-text">view website</a> </div>
+            </div>
+          </div>          <div class="col s12 m6 ">
+            <div class="card">
+              <div class="card-image  blue lighten-4" > <img src="images/website.JPG"> <span class="card-title black-text">Website 2</span> </div>
+              <div class="card-action cyan lighten-2"> <a href="#" class="white-text">view website</a> </div>
+            </div>
+          </div>          <div class="col s12 m6 ">
+            <div class="card">
+              <div class="card-image  blue lighten-4" > <img src="images/website.JPG"> <span class="card-title black-text">Website 3</span> </div>
+              <div class="card-action cyan lighten-2"> <a href="#" class="white-text">view website</a> </div>
+            </div>
+          </div>          <div class="col s12 m6 ">
+            <div class="card">
+              <div class="card-image  blue lighten-4" > <img src="images/website.JPG"> <span class="card-title black-text">Website 4</span> </div>
+              <div class="card-action cyan lighten-2"> <a href="#" class="white-text">view website</a> </div>
+            </div>
+-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="page-footer blue-grey darken-1">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Powered by Webtile software</h5>
+        <p class="grey-text text-lighten-4">Clean, compatible web designs.</p>
+      </div>
+      <!--
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+--> 
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <p> Â© 2017 Copyright Webtile&nbsp;</p>
+      <!--            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>--> 
+    </div>
+  </div>
+</footer>
+</body>
