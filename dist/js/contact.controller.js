@@ -5,13 +5,13 @@ $(document).ready(function () {
 });
 
 var config = {
-  apiKey: "AIzaSyB58JfHNSb2UCe9tN1JOuKsB_D9xAXZoOU",
-  authDomain: "minibit-e898f.firebaseapp.com",
-  databaseURL: "https://minibit-e898f.firebaseio.com",
-  projectId: "minibit-e898f",
-  storageBucket: "minibit-e898f.appspot.com",
-  messagingSenderId: "795534637484"
-};
+    apiKey: "AIzaSyCVHueeH4Ls8HFiOSr-5mDToS6AZIBCpQk",
+    authDomain: "webtile-com-au.firebaseapp.com",
+    databaseURL: "https://webtile-com-au.firebaseio.com",
+    projectId: "webtile-com-au",
+    storageBucket: "webtile-com-au.appspot.com",
+    messagingSenderId: "1057128384695"
+  };
 
 firebase.initializeApp(config);
 var database = firebase.database();
